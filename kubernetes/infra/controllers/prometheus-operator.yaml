@@ -52,7 +52,8 @@ spec:
           matchLabels:
             app.kubernetes.io/component: monitoring
         remote_write:
-          - url: http://mimir.flux.local/api/v1/push
+          - url: http://mimir-nginx.mimir-test.svc:80/api/v1/push
+
   postRenderers:
     - kustomize:
         patches:
