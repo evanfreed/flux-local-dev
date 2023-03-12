@@ -51,7 +51,7 @@ spec:
         podMonitorSelector:
           matchLabels:
             app.kubernetes.io/component: monitoring
-        remote_write:
+        remoteWrite:
           - url: http://mimir-nginx.mimir-test.svc:80/api/v1/push
 
   postRenderers:
